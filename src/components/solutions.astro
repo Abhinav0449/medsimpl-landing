@@ -2,7 +2,7 @@
 // Solutions Component
 ---
 
-<section class="relative min-h-screen bg-gradient-to-b from-cyan-800 via-cyan-700 to-white overflow-hidden">
+<section id="solutions" class="relative min-h-screen bg-gradient-to-b from-cyan-800 via-cyan-700 to-white overflow-hidden">
 
   <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
     <!-- Header section -->
@@ -26,7 +26,7 @@
     <!-- Solutions grid -->
     <div class="flex flex-wrap items-stretch justify-center gap-6 lg:gap-8 max-w-[90rem] mx-auto">
       <!-- Reception Card -->
-      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full sm:w-80 lg:w-96 min-h-[400px] flex flex-col">
         <!-- Icon -->
         <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -38,14 +38,14 @@
         <h3 class="text-xl lg:text-2xl font-bold text-gray-900 mb-4">Reception</h3>
         
         <!-- Features list -->
-        <ul class="space-y-3">
+        <ul class="space-y-3 flex-grow">
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Digital patient registration (Aadhaar, insurance)</span>
+            <span class="text-gray-700 text-sm lg:text-base">Fast, accurate patient registration process (Including ABHA registration)</span>
           </li>
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -53,7 +53,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Queue & token management</span>
+            <span class="text-gray-700 text-sm lg:text-base">Centralized EMR and task management tools</span>
           </li>
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -61,13 +61,13 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Integrated payment module</span>
+            <span class="text-gray-700 text-sm lg:text-base">Integrated payments and tokenized queues for faster checkouts and better patient experience</span>
           </li>
         </ul>
       </div>
 
       <!-- Doctor Card -->
-      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full sm:w-80 lg:w-96 min-h-[400px] flex flex-col">
         <!-- Icon -->
         <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,14 +79,14 @@
         <h3 class="text-xl lg:text-2xl font-bold text-gray-900 mb-4">Doctor</h3>
         
         <!-- Features list -->
-        <ul class="space-y-3">
+        <ul class="space-y-3 flex-grow">
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Digital patient registration (Aadhaar, insurance)</span>
+            <span class="text-gray-700 text-sm lg:text-base">Digital Prescriptions & Test Recommendation</span>
           </li>
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -102,13 +102,13 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Integrated payment module</span>
+            <span class="text-gray-700 text-sm lg:text-base">Centralized Patient Records for quick access to patient's history, vitals, and visit details</span>
           </li>
         </ul>
       </div>
 
       <!-- Admin Card -->
-      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full sm:w-80 lg:w-96 min-h-[400px] flex flex-col">
         <!-- Icon -->
         <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,14 +120,14 @@
         <h3 class="text-xl lg:text-2xl font-bold text-gray-900 mb-4">Admin</h3>
         
         <!-- Features list -->
-        <ul class="space-y-3">
+        <ul class="space-y-3 flex-grow">
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Digital patient registration (Aadhaar, insurance)</span>
+            <span class="text-gray-700 text-sm lg:text-base">Real-time dashboards & KPIs to monitor revenue, patient volumes, and operational efficiency</span>
           </li>
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -135,7 +135,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Queue & token management</span>
+            <span class="text-gray-700 text-sm lg:text-base">Centralized staff management with role-based access, attendance tracking, and shift scheduling</span>
           </li>
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -143,13 +143,13 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Integrated payment module</span>
+            <span class="text-gray-700 text-sm lg:text-base">Data-driven insights to identify bottlenecks, optimize resources, and improve hospital-wide performance</span>
           </li>
         </ul>
       </div>
 
-      <!-- E-pharmacy integration Card -->
-      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 md:col-span-1 lg:col-span-1">
+      <!-- Patient Card -->
+      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full sm:w-80 lg:w-96 min-h-[400px] flex flex-col">
         <!-- Icon -->
         <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -158,17 +158,17 @@
         </div>
         
         <!-- Title -->
-        <h3 class="text-xl lg:text-2xl font-bold text-gray-900 mb-4">E-pharmacy integration</h3>
+        <h3 class="text-xl lg:text-2xl font-bold text-gray-900 mb-4">Patient</h3>
         
         <!-- Features list -->
-        <ul class="space-y-3">
+        <ul class="space-y-3 flex-grow">
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Digital patient registration (Aadhaar, insurance)</span>
+            <span class="text-gray-700 text-sm lg:text-base">E-Pharmacy Services: Easy access to prescribed medicines delivered promptly.</span>
           </li>
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -176,7 +176,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Queue & token management</span>
+            <span class="text-gray-700 text-sm lg:text-base">Lab & Diagnostic Platform: Book tests, track results, and receive reports digitally.</span>
           </li>
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -184,13 +184,13 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
               </svg>
             </div>
-            <span class="text-gray-700 text-sm lg:text-base">Integrated payment module</span>
+            <span class="text-gray-700 text-sm lg:text-base">Automated reminders for appointments, payments, and reports.</span>
           </li>
         </ul>
       </div>
 
       <!-- Lab diagnostics platform Card -->
-      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 md:col-span-1 lg:col-span-1">
+      <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full sm:w-80 lg:w-96 min-h-[400px] flex flex-col">
         <!-- Icon -->
         <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -202,7 +202,7 @@
         <h3 class="text-xl lg:text-2xl font-bold text-gray-900 mb-4">Lab diagnostics platform</h3>
         
         <!-- Features list -->
-        <ul class="space-y-3">
+        <ul class="space-y-3 flex-grow">
           <li class="flex items-start gap-3">
             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

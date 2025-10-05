@@ -1,12 +1,13 @@
 ---
-import Navbar from '../components/navbar.astro';
-import Footer from '../components/footer.astro';
-import FeatureSection from '../components/features.astro';
-import Hero from '../components/hero.astro';
-import Layout from '../components/layout.astro';
-import Mission from '../components/mission.astro';
-import ContactUs from '../components/contact-us.astro';
-import Solutions from '../components/solutions.astro';
+import Navbar from "../components/navbar.astro";
+import Footer from "../components/footer.astro";
+import FeatureSection from "../components/features.astro";
+import Hero from "../components/hero.astro";
+import Layout from "../components/layout.astro";
+import Mission from "../components/mission.astro";
+import ContactUs from "../components/contact-us.astro";
+import Solutions from "../components/solutions.astro";
+import Vision from "../components/vision.astro";
 ---
 
 <html lang="en">
@@ -20,11 +21,14 @@ import Solutions from '../components/solutions.astro';
   <body>
     <Layout>
       <Navbar />
-      <Hero />
-      <FeatureSection />
-      <Solutions />
-      <Mission/>
-      <ContactUs />
+      <main class="pt-16">
+        <Hero />
+        <FeatureSection />
+        <Solutions />
+        <Vision />
+        <Mission />
+        <ContactUs />
+      </main>
       <Footer />
     </Layout>
   </body>
