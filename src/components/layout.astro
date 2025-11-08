@@ -1,7 +1,41 @@
 ---
-import '../styles/global.css'  
+import '../styles/global.css'
 ---
 
 <main>
     <slot />
 </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Handle scroll to sections
+    const scrollButtons = document.querySelectorAll('[data-scroll-to]');
+    
+    scrollButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-scroll-to');
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Handle scroll to top for logo
+    const scrollToTopButton = document.querySelector('[data-scroll-to-top]');
+    if (scrollToTopButton) {
+      scrollToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  });
+</script>

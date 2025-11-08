@@ -1,5 +1,4 @@
 ---
-
 ---
 
 <header
@@ -8,53 +7,53 @@
   <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="flex-1 md:flex md:items-center md:gap-12">
-        <a class="block text-teal-600" href="#">
+        <button class="block text-teal-600 bg-transparent border-none cursor-pointer" data-scroll-to-top>
           <span class="sr-only">Home</span>
           <img
-          src="logos.svg"
-          alt="MedSimpl Logo"
-          class="h-8 w-auto md:h-10 opacity-90 transition-all duration-300"
-        />
-        </a>
+            src="logos.svg"
+            alt="MedSimpl Logo"
+            class="h-8 w-auto md:h-10 opacity-90 transition-all duration-300"
+          />
+        </button>
       </div>
 
       <div class="md:flex md:items-center md:gap-12">
         <nav aria-label="Global" class="hidden md:block">
           <ul class="flex items-center gap-6 text-sm">
             <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75"
-                href="#solutions"
+              <button
+                class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer bg-transparent border-none"
+                data-scroll-to="solutions"
               >
                 Solutions
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75"
-                href="#vision"
+              <button
+                class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer bg-transparent border-none"
+                data-scroll-to="vision"
               >
                 Vision
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
-                class="text-gray-500 transition hover:text-gray-500/75"
-                href="#mission"
+              <button
+                class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer bg-transparent border-none"
+                data-scroll-to="mission"
               >
                 Mission
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
 
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
-            <a
-              class="rounded-md bg-cyan-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
-              href="#contact"
+            <button
+              class="rounded-md bg-cyan-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 transition-colors cursor-pointer"
+              data-scroll-to="contact"
             >
               Book A Demo
             </a>
