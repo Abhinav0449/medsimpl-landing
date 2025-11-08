@@ -14,6 +14,7 @@ import TextContent from "./text-content.astro";
     Health Simple
   </span>
 </TextContent> -->
+
 <section id="mission" class="py-8 lg:py-12 flex justify-center">
   <div
     class="overflow-hidden bg-gradient-to-r from-gray-100 via-gray-50 to-white mx-4 sm:mx-8 flex flex-col-reverse md:flex-row max-w-6xl w-full rounded-xl items-center min-h-[400px]"
@@ -52,12 +53,13 @@ import TextContent from "./text-content.astro";
         </span>
       </div>
     </div>
+    
     <div class="w-full sm:w-2/5 lg:w-1/2 flex-shrink-0">
-      <div
-        class="h-full min-h-[300px] sm:min-h-[400px] lg:min-h-[29rem] bg-cover bg-center"
-        style="background-image:url('mission.webp')"
-      >
-      </div>
+      <img
+        src="mission.webp"
+        alt="Our Mission"
+        class="w-full h-auto object-contain"
+      />
     </div>
   </div>
 </section>
