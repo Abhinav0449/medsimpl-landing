@@ -237,7 +237,7 @@ import Input from './input.astro';
       };
 
       // Validate required fields
-      if (!data.fullName || !data.organization || !data.workEmail || !data.phoneNumber) {
+      if (!data.fullName || !data.organization || !data.phoneNumber) {
         showMessage('Please fill in all required fields.', 'error');
         return;
       }
