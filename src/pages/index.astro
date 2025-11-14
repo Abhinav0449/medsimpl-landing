@@ -8,12 +8,12 @@ import Mission from "../components/mission.astro";
 import ContactUs from "../components/contact-us.astro";
 import Solutions from "../components/solutions.astro";
 import Vision from "../components/vision.astro";
+import { SEO } from "astro-seo";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>MedSimpl</title>
@@ -22,6 +22,31 @@ import Vision from "../components/vision.astro";
         scroll-behavior: smooth;
       }
     </style>
+
+     <SEO
+      title="MedSimpl"
+      description="A heavily optimized medical appointment booking platform."
+      openGraph={{
+        basic: {
+          title: "MedSimpl",
+          type: "A type.",
+          image: "/frame.webp",
+        }
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        // meta: [
+        //   {
+        //     name: "twitter:image",
+        //     content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+        //   },
+        //   { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+        //   { name: "twitter:description", content: "Agent" },
+        // ],
+      }}
+    />
   </head>
   <body>
     <Layout>
