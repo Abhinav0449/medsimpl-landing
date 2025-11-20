@@ -24,7 +24,7 @@ import { SEO } from "astro-seo";
       }
     </style>
 
-     <SEO
+    <SEO
       title="MedSimpl"
       description="A heavily optimized medical appointment booking platform."
       openGraph={{
@@ -33,20 +33,13 @@ import { SEO } from "astro-seo";
           type: "A type.",
           image: "/frame.webp",
         },
-        image:{url: "/frame.webp"},
+        image: { url: "/frame.webp" },
       }}
       extend={{
-        // extending the default link tags
-        link: [{ rel: "icon", href: "/favicon.ico" }],
-        // extending the default meta tags
-        // meta: [
-        //   {
-        //     name: "twitter:image",
-        //     content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
-        //   },
-        //   { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
-        //   { name: "twitter:description", content: "Agent" },
-        // ],
+        link: [
+          { rel: "icon", type: "image/png", href: "/favicon.png" },
+          { rel: "apple-touch-icon", href: "/favicon.png" },
+        ],
       }}
     />
   </head>
