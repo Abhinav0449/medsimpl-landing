@@ -3,10 +3,7 @@
 import Input from "./input.astro";
 
 const websiteLeadsUrl =
-  import.meta.env.PUBLIC_WEBSITE_LEADS_URL ??
-  (import.meta.env.DEV
-    ? "https://api.medsimpl.com/public/website-leads"
-    : new URL("/public/website-leads", import.meta.env.SITE).href);
+ "https://api.medsimpl.com/public/website-leads";
 ---
 
 <section
