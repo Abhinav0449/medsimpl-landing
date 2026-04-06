@@ -315,30 +315,31 @@ const websiteLeadsUrl =
 
 <script define:vars={{ websiteLeadsUrl }}>
   document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm") as HTMLFormElement;
-    const submitBtn = document.getElementById("submitBtn") as HTMLButtonElement;
-    const messageDiv = document.getElementById("message") as HTMLDivElement;
+    const form = document.getElementById("contactForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const messageDiv = document.getElementById("message");
+
+    if (!form || !submitBtn || !messageDiv) return;
 
     const API_URL = websiteLeadsUrl;
 
-    const phoneInput = document.getElementById(
-      "phoneNumber"
-    ) as HTMLInputElement;
+    const phoneInput = document.getElementById("phoneNumber");
     phoneInput?.addEventListener("input", function (e) {
-      const target = e.target as HTMLInputElement;
-      target.value = target.value.replace(/[^0-9]/g, "");
+      const target = e.target;
+      if (target instanceof HTMLInputElement) {
+        target.value = target.value.replace(/[^0-9]/g, "");
+      }
     });
 
-    form?.addEventListener("submit", async function (e) {
+    form.addEventListener("submit", async function (e) {
       e.preventDefault();
 
-      // Get form data
       const formData = new FormData(form);
       const data = {
-        fullName: formData.get("fullName") as string,
-        organization: formData.get("organization") as string,
-        workEmail: formData.get("email") as string,
-        phoneNumber: formData.get("phoneNumber") as string,
+        fullName: String(formData.get("fullName") ?? ""),
+        organization: String(formData.get("organization") ?? ""),
+        workEmail: String(formData.get("email") ?? ""),
+        phoneNumber: String(formData.get("phoneNumber") ?? ""),
       };
 
       // Validate required fields
@@ -401,7 +402,7 @@ const websiteLeadsUrl =
       }
     });
 
-    function showMessage(text: string, type: "success" | "error") {
+    function showMessage(text, type) {
       messageDiv.textContent = text;
       messageDiv.className = `p-4 rounded-lg text-center ${type}`;
       messageDiv.classList.remove("hidden");
