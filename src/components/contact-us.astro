@@ -233,7 +233,7 @@ const websiteLeadsUrl =
                   id="email"
                   name="email"
                   placeholder="you@hospital.com"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  pattern="[a-z0-9._%+-]+@[-a-z0-9.]+\.[a-z]{2,}$"
                   className="pl-6pr-3 py-3 bg-white/70 backdrop-blur-sm"
                 />
               </div>
@@ -356,7 +356,7 @@ const websiteLeadsUrl =
       // Validate email format
       if (
         data.workEmail &&
-        !/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(data.workEmail)
+        !/^[a-z0-9._%+-]+@[-a-z0-9.]+\.[a-z]{2,}$/i.test(data.workEmail)
       ) {
         showMessage("Please enter a valid email address.", "error");
         return;
