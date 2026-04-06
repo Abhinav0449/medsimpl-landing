@@ -1,6 +1,12 @@
 ---
 // Contact Us Component
 import Input from "./input.astro";
+
+const websiteLeadsUrl =
+  import.meta.env.PUBLIC_WEBSITE_LEADS_URL ??
+  (import.meta.env.DEV
+    ? "https://api.medsimpl.com/public/website-leads"
+    : new URL("/public/website-leads", import.meta.env.SITE).href);
 ---
 
 <section
@@ -307,14 +313,13 @@ import Input from "./input.astro";
   }
 </style>
 
-<script>
+<script define:vars={{ websiteLeadsUrl }}>
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm") as HTMLFormElement;
     const submitBtn = document.getElementById("submitBtn") as HTMLButtonElement;
     const messageDiv = document.getElementById("message") as HTMLDivElement;
 
-    const API_URL =
-      "https://jogl4v5b0e.execute-api.ap-south-1.amazonaws.com/PROD/medsimpl-contact-handler";
+    const API_URL = websiteLeadsUrl;
 
     const phoneInput = document.getElementById(
       "phoneNumber"
@@ -363,7 +368,6 @@ import Input from "./input.astro";
       submitBtn.disabled = true;
 
       try {
-        // Submit to AWS API
         const response = await fetch(API_URL, {
           method: "POST",
           headers: {
